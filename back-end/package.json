@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "testC",
-    "start": "env-cmd -f ProtectionData.env nodemon server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
