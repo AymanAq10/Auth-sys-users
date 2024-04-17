@@ -16,7 +16,7 @@ app.use(express.json());
 
 const url = process.env.url;
 const dbName = process.env.dbName;
-const _PORT = process.env.PORT;
+const _PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
