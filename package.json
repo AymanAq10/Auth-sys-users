@@ -1,0 +1,21 @@
+{
+  "name": "auth_mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
+  "start-client": "cd front-end && npm start",
+  "start-server": "cd back-end && npm start"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AymanAq10/Authentication_system_users/issues"
+  },
+  "homepage": "https://github.com/AymanAq10/Authentication_system_users#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

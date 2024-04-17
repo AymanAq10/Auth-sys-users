@@ -1,0 +1,51 @@
+.P-class{
+    z-index: 100;
+    height: 78%;
+    position: absolute;
+    background: #015b16;
+    color: white;
+    left: 50%;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.P-class > button{
+    border-radius: 100%;
+    text-align: center;
+    background: red;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: sans-serif;
+    width: 16px;
+    height: 16px;
+}
+.P-class > input{
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 4px;
+    outline:none;
+    color: #000;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.P-class > input:nth-child(5){
+    background: #4f46e5;
+    color: rgb(255 255 255);
+    padding: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
