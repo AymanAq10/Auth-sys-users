@@ -10,7 +10,7 @@ function SignUp() {
 
   const register = async () => {
     try {
-      const response = await axios.post('http://localhost:3002/users/signup', { fullName,email, password });
+      const response = await axios.post('https://auth-sys-users.onrender.com/users/signup', { fullName,email, password });
       console.log(response)
       alert('Registration successful');
       Navigate("/login")
