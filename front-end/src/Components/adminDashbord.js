@@ -12,7 +12,7 @@ const [data,setdata]=useState(null);
 const [isloading,setisLoading]=useState(false);
 const [errMsg,seterrMsg]=useState(null);
 const token = localStorage.getItem('token');
-const api = `https://auth-sys-users.onrender.com/`
+const api = `https://auth-sys-users.onrender.com/users`
 
 
 useEffect(()=>{
