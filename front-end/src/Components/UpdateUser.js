@@ -10,7 +10,7 @@ export default function UpdateUser (props){
     const Update = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.put(`http://localhost:3002/users/update/${parseInt(props.userID)}`, { fullName,email, password },{
+      const response = await axios.put(`https://auth-sys-users.onrender.com/users/update/${parseInt(props.userID)}`, { fullName,email, password },{
           headers: {
             Authorization: `Bearer ${token}`,
           },
