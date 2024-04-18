@@ -12,7 +12,7 @@ const [data,setdata]=useState(null);
 const [isloading,setisLoading]=useState(false);
 const [errMsg,seterrMsg]=useState(null);
 const token = localStorage.getItem('token');
-const api = `http://localhost:3002/users/`
+const api = `https://auth-sys-users.onrender.com/`
 
 
 useEffect(()=>{
@@ -94,7 +94,7 @@ const [UserId, setUserId] = useState(null);
 const token = localStorage.getItem('token');
 const Delete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:3002/users/remove/${parseInt(id)}`,{
+      const response = await axios.delete(`https://auth-sys-users.onrender.com/users/remove/${parseInt(id)}`,{
           headers: {
             Authorization: `Bearer ${token}`,
           },
