@@ -13,7 +13,7 @@ function ResetPasswordForm() {
   const handleSendCode = async () => {
     try {
       // Send a POST request to your backend API to send the verification code
-      const response = await fetch('http://localhost:3002/users/send-reset-code', {
+      const response = await fetch('https://auth-sys-users.onrender.com/users/send-reset-code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function ResetPasswordForm() {
     try {
       // Send a POST request to your backend API to verify the reset code    
       console.log(email,resetCode)
-      const response = await fetch('http://localhost:3002/users/verify-reset-code', {
+      const response = await fetch('https://auth-sys-users.onrender.com/users/verify-reset-code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function ResetPasswordForm() {
       	alert('passwords not the same')
       }
       else{
-      const response = await fetch('http://localhost:3002/users/reset-password', {
+      const response = await fetch('https://auth-sys-users.onrender.com/users/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
