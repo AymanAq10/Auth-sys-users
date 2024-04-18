@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const fetchUserRole = async () => {
       try {
-        const response = await axios.get(`https://auth-sys-users.onrender.com/users/${userId}`, {
+        const response = await axios.get(`https://auth-sys-users.onrender.com/users`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -27,6 +27,7 @@ function App() {
         setRole(response.data[0].role)
       	setData(response.data)
       	setloading(false)
+        console.log(response.data)
       } catch (error) {
         setloading(false)
         console.log('Failed to fetch user role:', error.response.data.error);
