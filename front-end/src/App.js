@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const fetchUserRole = async () => {
       try {
-        const response = await axios.get(`https://auth-sys-users.onrender.com/users`, {
+        const response = await axios.get(`https://auth-sys-users.onrender.com/users/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
