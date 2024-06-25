@@ -98,3 +98,32 @@
 .dp-down > ul > a:nth-child(2) > li {
     background: #8b0000b8;
 }
+
+@media screen and (max-width:576px){
+    .container {
+    max-width: 100% !important;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 80px;
+    overflow: hidden;
+}
+    
+.container > nav {
+        grid-row: 2 / 3;
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        top: -7vh;
+        display: flex;
+        padding: 24px;
+        align-items: center;
+        background: #7E57C2;
+        justify-content: space-between;
+        color: #fff;
+        flex-direction: row;
+}
+.container > nav > p{
+    display:none;
+}
+}
